@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- titre de la page -->
+    <title>Test Html</title>
+    <!-- icone de l'onglet -->
+    <link rel="shortcut icon" href="html logo.png" />
+  </head>
+  <body>
+    <header>
+      <div>
+        <h1><span>&#9733;</span>Texte - Titre H1</h1>
+        <p>Ceci est un texte. <em>Ici en italique</em></p>
+        <strong>Celui ci est en gras</strong>
+      </div>
+    </header>
+    <section>
+      <div>
+        <h2>Photos - Titre H2</h2>
+        <img
+          src="asuna kirito fond d'écran.jpg"
+          height="200"
+          alt="img random"
+        />
+      </div>
+      <div>
+        <h3>Listes - Titre H3</h3>
+        <!-- ul = unordered list -->
+        <ul>
+          <li>unordered list</li>
+          <li>unordered list</li>
+          <li>unordered list</li>
+        </ul>
+        <ol>
+          <li>OL= Ordered list</li>
+          <li>OL= Ordered list</li>
+          <li>OL= Ordered list</li>
+        </ol>
+      </div>
+      <div>
+        <h4>Tableaux - Titre H4</h4>
+        <table border="2" width="50%">
+          <!--légende-->
+          <caption>
+            Populations d'Europe
+          </caption>
+          <!--En-tête-->
+          <thead>
+            <tr>
+              <th>Pays</th>
+              <th>Populations</th>
+            </tr>
+          </thead>
+          <!-- corps du tableau -->
+          <tbody>
+            <tr>
+              <td>France</td>
+              <td>68M</td>
+            </tr>
+            <tr>
+              <td>Allemagne</td>
+              <td>83M</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <h5>Liens - Titre H5</h5>
+        <a href="https://youtu.be/qyYmS_iBcy4?si=D6ICvz5xBw7j9s0Y"
+          target="_blank"
+          >Lorna Shore-To the Hellfire</a>
+        <br />
+        <a href="https://htmlcheatsheet.com" target="_blank"
+          >Html Cheat Sheet</a>
+        <br/>
+        <a
+          href="https://www.toptal.com/designers/htmlarrows/symbols/"
+          target="_blank"
+          >Html Arrows symbols</a>
+      </div>
+      <div>
+        <h6>Vidéos - Titre H6</h6>
+        <video src="Vidéo.mp4" height="200" autoplay loop muted></video>
+      </div>
+    </section>
+    <br>
+    <!-- Formulaire -->
+    <section>
+        <h2>Formulaire</h2>
+        <form action="/action.php" method="post">
+            <label for="name">Nom </label>
+            <input id="name" type="text" placeholder="Entrez votre nom">
+            <br>
+            <label for="age">Age </label>
+            <input id="age" type="number" min="0" max="99" step="1" value="18"> 
+            <br>
+            <!-- Input select -->
+            <label for="gender">Genre</label>
+            <select id="gender">
+                <option value="homme">Homme</option>
+                <option selected value="Femme">Femme</option>
+            </select> <br>
+            <!-- Input radio -->
+            <div>
+                <input type="radio"name="type" checked id="human">
+                <label for="human">Humain</label>
+
+                <input type="radio"name="type" id="dog">
+                <label for="dog">Chien</label>
+
+                <input type="radio"name="type" id="cat">
+                <label for="cat">Chat</label>
+            </div>
+            <textarea cols="30" rows="10" placeholder="Entrez du texte ici"></textarea><br>
+            <!-- Input Checkbox -->
+            <label><input type="checkbox">Accepter les CGV</label>
+            <br>
+            <input type="submit" value="Valider">
+        </form>
+    </section>
+    <br>
+    <!-- Mail et envoi de fichier -->
+    <footer>
+      <a href="mailto:gabinfietier@gmail.com">Contactez-moi !</a>
+      <br>
+      <a href="Notice.txt" 
+      download="nom-du-fichier">Télécharger la notice</a>
+    </footer>
+  </body>
+</html>
